@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RHYNO</title>
+    <!-- Link to Google Fonts for Lato, Poppins, and Calibri -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to your CSS file for custom styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Optionally, you can include a favicon -->
+    <link rel="icon" img src="logo.png" href="favicon.png">
+    <span>RHYNO EV</span> 
+    
+    <style>
+        body {
+            background-color: #252525; /* Set background color to black */
+            color: #FFFFFF; /* Set text color to white */
+            font-family: 'Calibri', sans-serif; /* Set default font family */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        header img {
+            height: 40px; /* Adjust height as needed */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        .feature {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .feature p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo -->
+        <img src="logo.png" alt="Company Logo">
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Product 1.html">Product 1</a></li>
+                <li><a href="Product 2.html">Product 2</a></li>
+                <li><a href="Product 3.html">Product 3</a></li>
+                <li><a href="Compare All.html">Compare All</a></li>
+                <li><a href="Pre-Book.html">Pre-Book</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Rentals.html">Rentals</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu with Burger Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        .menu ul li a:hover {
+            background-color: #555;
+        }
+        .burger-btn {
+            display: none;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .burger-btn {
+                display: block;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 2000;
+            }
+            .menu {
+                display: none;
+                background-color: #333;
+                padding: 10px;
+                text-align: left;
+                width: 60%;
+                max-width: 300px;
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                z-index: 1500;
+            }
+            .menu.active {
+                display: block;
+            }
+        }
+        .burger-icon {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <link rel="icon" img src="<link rel="icon" img src="logo.png" href="favicon.png">
+
+<div class="burger-btn" onclick="toggleMenu()">
+    <img class="burger-icon" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ficons%2Fhamburger&psig=AOvVaw186r67DDxpStWwWUsJSbjJ&ust=1714920537010000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiWg_6e9IUDFQAAAAAdAAAAABAE" alt="Menu">
+</div>
+
+<div class="menu" id="menu">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li>
+            <a href="#">Products</a>
+            <ul>
+                <li><a href="Product 1.html">Product 1</a></li>
+                <li><a href="Product 2.html">Product 2</a></li>
+                <li><a href="Product 3.html">Product 3</a></li>
+            </ul>
+        </li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Pre-Book.html">Pre-Book Now</a></li>
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
